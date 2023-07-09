@@ -24,6 +24,10 @@ textarea {
   border-top: 1px solid white;
 }
 
+.row:hover {
+  background-color: rgb(192, 192, 192);
+}
+
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -53,7 +57,18 @@ textarea {
   color: white;
 }
 
+.saveBtn:hover {
+  background-color: #09c1eb;
+  transition: all 0.1s ease-in-out;
+  transform: scale(.97);
+  border: 1px solid white;
+}
+
+i {
+  font-size: 30px;
+}
+
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  transform: rotate(11deg);
+  transition: all 0.2s ease-in-out;
 }
