@@ -12,30 +12,30 @@ $(document).ready(function () {
 
   function localStorageReader() {
     var timeBlocks = $('.container-lg').children()
-    var startingHour = timeBlocks.attr('id').split('-')[1]
+    var startingHour = timeBlocks.attr('id').split(`-`)[1]
     var hourNumber =parseInt(startingHour)
     for (var i = 0; i < 9; i++) {
       var currentHour = hourNumber + i
-      var selectString = '#hour-${currentHour.toString()} .description'
-      var storageValue = localStorage.getItem('#hour-${currentHour.toString()}')
+      var selectString = `#hour-${currentHour.toString()} .description`
+      var storageValue = localStorage.getItem(`#hour-${currentHour.toString()}`)
       $(selectString).val(storageValue)
     }
   }
 
   function timeColor() {
     var timeBlocks = $('.container-lg').children()
-    var startingHour = timeBlocks.attr('id').split('-')[1]
+    var startingHour = timeBlocks.attr('id').split(`-`)[1]
     var hourNumber = parseInt(startingHour)
     var timeOfDay = dayjs().hour()
     for (var i = 0; i < 9; i++){
       var schedulerHour = hourNumber + i
-      var selectString = '#hour-${schedulerHour.toString()}'
+      var selectString = `#hour-${schedulerHour.toString()}`
       if (schedulerHour < timeOfDay) {
-        $(selectString).addClass('past')
+        $(selectString).addClass(`past`)
       } else if (schedulerHour === timeOfDay){
-        $(selectString).addClass('present')
+        $(selectString).addClass(`present`)
       } else if (schedulerHour > timeOfDay){
-        $(selectString).addClass('future')
+        $(selectString).addClass(`future`)
       }
     }
   }
