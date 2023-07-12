@@ -15,5 +15,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ## Screenshot
 <img src="./assests/2023-07-11.png" alt="screenshot of website">
+
 ## Link to deployed application
 https://ashortaznkid.github.io/Work-Day-Scheduler/
