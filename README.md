@@ -13,7 +13,7 @@ WHEN I click the save button for that time block
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
-##Screenshot
+## Screenshot
 <img src="./assests/2023-07-11.png alt="screenshot of website">
 ## Link to deployed application
 https://ashortaznkid.github.io/Work-Day-Scheduler/
